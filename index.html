@@ -1,107 +1,201 @@
 <!DOCTYPE html>
 <html lang="en-us">
 ​
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-  <title>Is it fake?</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it fake?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 ​
+
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand text-light-white" href="index.html">Is it fake?</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <a class="navbar-brand text-light-white" href="index.html">Is it fake?</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ML Model
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Supervised</a></li>
-                    <li><a class="dropdown-item" href="#">Unsupervised</a></li>
-                    <li><a class="dropdown-item" href="#">Data</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ML Model
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Supervised</a></li>
+                            <li><a class="dropdown-item" href="#">Unsupervised</a></li>
+                            <li><a class="dropdown-item" href="index_copy.html">Data</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="toolkit.html">Toolkit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutus.html">About Us</a>
+                    </li>
+
                 </ul>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link active" href="toolkit.html">Toolkit</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="aboutus.html">About Us</a>
-                </li>
-
-            </ul>
             </div>
         </div>
     </nav>
 
-        <img src="assets/images/fakefact.jpg" alt="" width="100%">
 
-    <!-- <section style="background-image: url(assets/images/fakefact.jpg);">
+    <main>
+
+        <article id="scrolly">
+
+            <section id="hero-section">
+                <div class="hero-image">
+                    
+                    <img id="hero-image-0" class="visible" src="assets/images/fakefact.jpg"/>
+                
+                </div>
+                <div class="content-wrapper">
+                    <div class="column-left">
+                        <div class="hero-text">
+
+                            <h1>Is it fake?</h1>
+                            <h2>fake news fake news fake news fake news fake news fake news fake news fake news </h2>
+                            
+                            <h2><strong>By Floppy Disks Data Team</strong></h2>
+                                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="explainer">
+                <div class="content">
+ 
+                 <h3>How to spot fake news</h3>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                    </p>
+                </div>
+            </section>
+
+            <section id="explainer">
+
+                <div class="hero-image">
+
+                    <img id="hero-image-1" class="visible" src="assets/images/fake.jpg" />
+                    <img id="hero-image-2" src="assets/images/fakefact.jpg" />
+                    <img id="hero-image-3" src="assets/images/fakenews.jpg" />
+
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="column-right">
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis exercitationem doloremque iure in, amet quisquam esse asperiores mollitia facere pariatur veniam laudantium dolorem quam? Esse atque temporibus fugiat sapiente?
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a libero iusto nobis officiis est repellat magnam adipisci aspernatur saepe laboriosam consequatur, repudiandae, asperiores dolore in aliquid nulla accusantium enim.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus tempore temporibus laboriosam quos adipisci obcaecati animi harum numquam praesentium, inventore est illum aspernatur corrupti quibusdam ea ipsa explicabo ratione?
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="3">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, accusamus. Reprehenderit dicta cumque, temporibus, mollitia enim consequatur modi quia nam excepturi voluptatem eveniet voluptatibus architecto sapiente quae perspiciatis soluta molestias.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+    
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <section id="explainer">
+                        <div class="content">
+
+                            <h3>How to spot fake news</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
+                                temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
+                                enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <section>
+
+                    <video id="hero-video" controls>
+                        <source src="assets/images/fake1nosub_papersTrim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+            </section>
+
+
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <section id="explainer">
+                        <div class="content">
+
+                            <h3>How to spot fake news</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
+                                temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
+                                enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    
+            <!-- <section style="background-image: url(assets/images/fakefact.jpg);">
         <p>
             a
         </p>
     </section> -->
 
 
-    <!-- SUMARY -->
-    <section>
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
 
-            <h1 class="dark:bg-primary dark:text-white">Project Summary</h1>
-            <br>
-            <h5 class="text-light-green">Title</h5>
-            <br>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda earum eos dolore facilis quaerat aspernatur incidunt. Quae repellat laborum quo rem nobis corrupti facilis, earum officia incidunt neque dolorem.
+        </article>
 
-            </p>
-            </div>
+    </main>
 
-            <div class="col-lg-6">
-                
-                <div class="container">
-                    <div class="row">
-
-                        <h1 class="dark:bg-primary dark:text-white">Visualizations</h1>
-
-                        <div class="col-md-6">
-                            <a href="#">
-                                <img width="100%" src="assets/images/fake.jpg" alt="" />
-                            </a>
-                            <a href="#">
-                                <img width="100%" src="assets/images/fake.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#">
-                                <img width="100%" src="assets/images/fake.jpg" alt="" />
-                            </a>
-                            <a href="#">
-                                <img width="100%" src="assets/images/fake.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    ​
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script type='text/javascript' src='assets/js/scrolly.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
