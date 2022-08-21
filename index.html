@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 ​
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
+    <!-- /////////////////   NAVBAR    //////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-light-white" href="index.html">Is it fake?</a>
@@ -48,48 +49,148 @@
         </div>
     </nav>
 
-
+    <!-- ////////////////////////////  MAIN  //////////////////////////// -->
     <main>
 
         <article id="scrolly">
 
             <section id="hero-section">
                 <div class="hero-image">
-                    
-                    <img id="hero-image-0" class="visible" src="assets/images/fakefact.jpg"/>
-                
+                    <img id="hero-image-0" class="visible" src="assets/images/fakefact.jpg" />
                 </div>
                 <div class="content-wrapper">
                     <div class="column-left">
                         <div class="hero-text">
-
                             <h1>Is it fake?</h1>
-                            <h2>fake news fake news fake news fake news fake news fake news fake news fake news </h2>
-                            
-                            <h2><strong>By Floppy Disks Data Team</strong></h2>
-                                              
-                            </div>
+                            <h2>
+                                Fake news affects us all. That's why we developed a Machine Learning model to detect
+                                them. Read on to find out the results.
+                            </h2>
+                            <h2><strong>By FD Data Team</strong></h2>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
 
             <section id="explainer">
                 <div class="content">
- 
-                 <h3>How to spot fake news</h3>
-                    
+                    <!-- <h3>What is fake news</h3> -->
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                        Can anyone tell what is true and what is fake news anymore? From the weaponisation of Covid-19,
+                        to devastating meteors en route to destroy earth, and that notion that Pope Francis endorsed
+                        Trump in the US presidential race.
+                    </p>
+                    <p>
+                        Most fake news, however, is difficult to decipher which has led to many people airing on the
+                        side of caution and increasing their deep mistrust of the media.
                     </p>
                 </div>
             </section>
+
+            <section>
+                <video id="hero-video" controls>
+                    <source src="assets/video/introfakenews.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            
+            <section id="explainer">
+                <div class="content">
+                    <h3>What is fake news</h3>
+                    <p>
+                        There are various definitions and types of disinformation, but a possible one is given by the Cambridge Dictionary: 
+                    </p>
+                    <p>
+                        "Fake news are false stories that appear to be news, spread on the internet or using other media, usually created to influence political views or as a joke".
+                    </p>
+
+                    <blockquote class="pull-quote"> 
+                        "Approximately 45% of adults in the UK believe they see or read fake news everyday" 
+                        (<a href="https://journolink.com/resources/post/319-fake-news-statistics-2019-uk-worldwide-data" target="_blank" rel="noopener noreferrer">JournoLink</a>, 2022).
+                    </blockquote>
+                </div>
+            </section>
+
+            <section>
+
+                <video id="hero-video" controls>
+                    <source src="assets/video/library-internet.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </section>
+
+
+
+            <section id="explainer">
+
+                <div class="hero-image">
+                    <img id="hero-image-1" class="visible" src="assets/images/fake.jpg" />
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="column-right">
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                The reported effects of fake news includes:
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                DISTRUST IN THE MEDIA
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                THE DEMOCRATIC PROCESS BEING UNDERMINED
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                INCREASES IN CONSPIRACY THEORIES AND HATE SPEECH
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="1">
+                            <p>
+                                THE GENERAL SPREAD OF FALSE INFORMATION TO THE DETRIMENT OF PUBLIC SAFETY
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <section id="explainer">
+                        <div class="content">
+
+                            <h3>What have we done about it</h3>
+
+                            <p>
+                                If fake news could be distinguished from real news then the spread of misinformation would reduce.
+                            </p>
+                            <p>
+                                This is why we have built a supervised machine learning model using Natural Language Programming to predict whether the news is real or fake.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
 
             <section id="explainer">
 
                 <div class="hero-image">
 
-                    <img id="hero-image-1" class="visible" src="assets/images/fake.jpg" />
                     <img id="hero-image-2" src="assets/dataviz/fake1.jpg" />
                     <img id="hero-image-3" src="assets/dataviz/real1.jpg" />
 
@@ -98,27 +199,36 @@
                 <div class="content-wrapper">
                     <div class="column-right">
 
-                        <div class="step bordered" data-step="1">
+                        <div class="step bordered" data-step="2">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis exercitationem doloremque iure in, amet quisquam esse asperiores mollitia facere pariatur veniam laudantium dolorem quam? Esse atque temporibus fugiat sapiente?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis exercitationem
+                                doloremque iure in, amet quisquam esse asperiores mollitia facere pariatur veniam
+                                laudantium dolorem quam? Esse atque temporibus fugiat sapiente?
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="2">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a libero iusto nobis officiis est repellat magnam adipisci aspernatur saepe laboriosam consequatur, repudiandae, asperiores dolore in aliquid nulla accusantium enim.
-                            </p>
-                        </div>
-
-                        <div class="step bordered" data-step="2">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus tempore temporibus laboriosam quos adipisci obcaecati animi harum numquam praesentium, inventore est illum aspernatur corrupti quibusdam ea ipsa explicabo ratione?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a libero iusto nobis
+                                officiis est repellat magnam adipisci aspernatur saepe laboriosam consequatur,
+                                repudiandae, asperiores dolore in aliquid nulla accusantium enim.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="3">
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, accusamus. Reprehenderit dicta cumque, temporibus, mollitia enim consequatur modi quia nam excepturi voluptatem eveniet voluptatibus architecto sapiente quae perspiciatis soluta molestias.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus tempore
+                                temporibus laboriosam quos adipisci obcaecati animi harum numquam praesentium, inventore
+                                est illum aspernatur corrupti quibusdam ea ipsa explicabo ratione?
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="3">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, accusamus.
+                                Reprehenderit dicta cumque, temporibus, mollitia enim consequatur modi quia nam
+                                excepturi voluptatem eveniet voluptatibus architecto sapiente quae perspiciatis soluta
+                                molestias.
                             </p>
                         </div>
 
@@ -126,34 +236,6 @@
                 </div>
             </section>
 
-    
-            <div class="row">
-                <div class="col-lg-9">
-
-                    <section id="explainer">
-                        <div class="content">
-
-                            <h3>How to spot fake news</h3>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
-                                temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
-                                enim fugit optio dolor nemo aperiam doloremque laboriosam?
-                            </p>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-
-            <section>
-
-                    <video id="hero-video" controls>
-                        <source src="assets/video/library-internet.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-            </section>
 
 
             <div class="row">
@@ -173,12 +255,6 @@
                     </section>
                 </div>
             </div>
-    
-            <!-- <section style="background-image: url(assets/images/fakefact.jpg);">
-        <p>
-            a
-        </p>
-    </section> -->
 
 
 
