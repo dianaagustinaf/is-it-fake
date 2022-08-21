@@ -1,6 +1,6 @@
 
-.text-light-white{
-    color: rgb(167, 72, 255);
+.text-light-color{
+    color: #73A6D1;
 }
 
 /* .data-table{
@@ -84,12 +84,12 @@ p {
   blockquote.pull-quote {
     font-size: 1.8rem;              
     font-weight: 800;
-    color: orange;
+    color: #420264;
     /* margin: 70px -80px; */
   }
   
   a {
-    color: #333;
+    color: #2F6FAC;
   }
   
   figcaption {
@@ -104,7 +104,7 @@ p {
   }
   
   mark {
-    background-color: #fbc531;
+    background-color: #73A6D1;
   }
   
   
@@ -297,7 +297,7 @@ p {
       font-size: 1.563rem;
       font-weight: 800;
       margin: 50px 0px;
-      color: orange;
+      color: #420264;
     }
   
     figure.sticky {
