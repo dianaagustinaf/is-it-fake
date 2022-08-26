@@ -47,42 +47,7 @@ Storytelling: Scrollama (JS library)
 
 AI  ⇨  Machine Learning ⇨  Deep Learning 
 
-
-Steps:
-
-Extract Data
-
-⬇️
-
-Explore Data
-
-⬇️
-
-Clean Data
-
-⬇️
-
-Visualise Data
-
-⬇️
-
-Pre-process Data
-
-⬇️
-
-Compile (Deep Learning Models only)
-
-⬇️
-
-Train Model
-
-⬇️
-
-Evaluate Models
-
-⬇️
-
-Test Models
+![image](https://user-images.githubusercontent.com/100214297/186986408-66789c44-8a92-4c36-92f5-6019ea8d83f7.png)
 
 ## Initial Data Exploration & Visualisation
 
