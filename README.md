@@ -1,4 +1,4 @@
-# Real or Fake News? A Machine Learning Model to Detect Fake News 🧠
+# Real or Fake News? Machine & Deep Learning Models to Detect Fake News 🧠
 
 ![image](https://user-images.githubusercontent.com/100214297/186528994-8007a67a-b285-466c-91f5-8c872666d5df.png)
 
@@ -16,75 +16,45 @@ Approximately 45% of adults in the UK believe they see or read fake news everyda
 
 The reported effects of fake news includes: distrust in the media, the democratic process being undermined, increases in conspiracy theories and hate speech, and the general spread of false information to the detriment of public safety. 
 
-Therefore, we aimed to build a machine learning model to predict whether news is real or fake.
+Therefore, we aimed to build a machine learning model to predict whether news is real or fake. We hosted our findings and presentation on aan interactive site:
 
-Also see our back-end repo here: https://github.com/Shannon-Watts/fake_news_ML.git
+Front-end repo [here](https://github.com/dianaagustinaf/is-it-fake.git)
 
 ![image](https://user-images.githubusercontent.com/100214297/186919181-64c6c7e1-e3c5-4d76-ad2a-c03ecb68b863.png)
 
 ## Dataset:
 
-https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download 
+Click [here](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download) for original Kaggle data
 
 
 ### Back-End Tools:
 
-Importing Data: Spark 
-Data Preprocessing: Python, Pandas
+
+Importing Data: Spark
+
+Data Preprocessing: Python 
+
 Machine Learning: Supervised machine learning with Natural Language Programming (Natural Language Understanding) and BERT (Bidirectional Encoder Representations from Transformers). 
 
 ### Front-End & Data Visualisation:
 
 Web Design Structure: HTML, CSS (inc. Bootstrap) 
-Data Visualisations: D3, Plotly Express, Matplotlib 
+
+Data Visualisations: Plotly Express, Matplotlib, Word Cloud
+
 Storytelling: Scrollama (JS library)
 
 ## Machine Learning Process
 
 AI  ⇨  Machine Learning ⇨  Deep Learning 
 
+![image](https://user-images.githubusercontent.com/100214297/186986548-5ac79fbe-08c5-4e70-939a-71af1298da81.png)
 
-Steps:
-
-Extract Data
-
-⬇️
-
-Explore Data
-
-⬇️
-
-Clean Data
-
-⬇️
-
-Visualise Data
-
-⬇️
-
-Pre-process Data
-
-⬇️
-
-Compile (Deep Learning Models only)
-
-⬇️
-
-Train Model
-
-⬇️
-
-Evaluate Models
-
-⬇️
-
-Test Models
-
-## Initial Data exploration and Visualisation
+## Initial Data Analysis
 
 ![image](https://user-images.githubusercontent.com/100214297/186917543-76f60990-8c97-47ef-99fd-5f0bc20f1c7f.png) ![image](https://user-images.githubusercontent.com/100214297/186917583-7424d04f-faa0-4c65-8d8e-36fc697b453b.png)
 
-## Pre-processing the  Data
+## Pre-processing the Data
 Target Column: Title. Title words converted into lowercase, removed all stop words and special characters. 
 
 ## Tokenization 
@@ -95,7 +65,7 @@ We trialed 2 ways of tokenizing:
 ## Train-Test Split
 Data was split into Train and Test data to evaluate the performance of our Machine Learning Algorithm.
 
-## Machine Learning Models: 6 Binary Classification models
+## Models: 6 Binary Classification models
 We chose 6 machine learning algorithms best suited for Binary Classification problems to find the best model for predicting Fake New. This required an additonal preprocessing step: vectorisation - we used CountVectoriser.
 
 Result: SVM has the best score of all the models we tested. Support Vector Machine are very effective as a machine learning model with classification and regression problems. It also has low error rates - typically lower than Nueral Network models. 
@@ -106,7 +76,7 @@ Interestingly, the Naive Bayes MB Classifier did not work as well as expected. W
 
 Following the evaluations of the machine learning models we decided to trial out two deep learning models. We thought that the deep learning models might have a higher prediction rate than the machine learning models as deep learning is a sub group of artifical intelligence. 
 
-## Deep Learning: NLP Sequential Model
+## NLP Model
 
 For the Supervised Learning Model we used a Keras Sequential deep learning model. We created a neural network model and the resulting accuracy was higher than the previous models. This model works best as a binary classifier and additional layers were added to account for the text classification: the Embedding layer converts sequences into arrays of word vectors and the Dense layer classifyies arrays of word vectors.
 
@@ -129,7 +99,7 @@ To investigate this further we would:
 
 We predict that a Convultional Network Model would have a higher accuracy and lower error rate. This is because convultional neural networks automatically detect import features in addition to other advantages over other neural network models. 
 
-## Deep Learning: BERT
+## BERT
 
 Lastly, we trained a BERT model. BERT is a new method of pre-training language representations from Google which outperforms previous methods on a variety of Natural Language Processing (NLP) tasks. 
 
@@ -165,6 +135,6 @@ Similar actions by past leaders has lead to dire consequences on citizens of nat
 If fake news could be distinguished from real news then the spread of misinformation would reduce. It would also have positive ramifications for democratic processes, the spread of hate speech, and public safety. 
 
 # Presentation of Project 
-This project and the analysis has been hosted on githubpages:
+This project and the analysis has been hosted on [githubpages](https://dianaagustinaf.github.io/is-it-fake/):
 
 ![image](https://user-images.githubusercontent.com/100214297/186919485-f6bce305-0176-4991-bb1b-3f972db40449.png)
