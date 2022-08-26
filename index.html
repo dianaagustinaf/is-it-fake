@@ -16,7 +16,8 @@
     <!-- /////////////////   NAVBAR    //////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-light-color" style="font-size: 150%; font-weight: bold;" href="index.html">Is it fake?</a>
+            <a class="navbar-brand text-light-color" style="font-size: 150%; font-weight: bold;" href="index.html">Is it
+                fake?</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -75,7 +76,7 @@
             <section id="explainer">
                 <div class="content">
                     <p>
-                        Can anyone tell what is true and what is fake news anymore? 
+                        Can anyone tell what is true and what is fake news anymore?
                     </p>
                     <p>
                         From the weaponisation of Covid-19,
@@ -96,7 +97,7 @@
                 </video>
             </section>
 
-            
+
             <section id="explainer">
                 <div class="content">
                     <h3>What is fake news</h3>
@@ -104,28 +105,30 @@
                         Fake news is misleading information deliberately spread as “news” typically online.
                     </p>
                     <p>
-                        There is an important difference between fake news and simply inaccurate reporting: 
+                        There is an important difference between fake news and simply inaccurate reporting:
                         fake news implies that the <b>misinformation is absolutely deliberate</b>.
                     </p>
 
                     <figure>
                         <blockquote class="blockquote pull-quote">
-                          <p>About half of adults in the UK believe they see or read fake news everyday.</p>
+                            <p>About half of adults in the UK believe they see or read fake news everyday.</p>
                         </blockquote>
                         <figcaption class="blockquote-footer">
-                          <cite title="JournoLink"><a href="https://journolink.com/resources/post/319-fake-news-statistics-2019-uk-worldwide-data" target="_blank" rel="noopener noreferrer">JournoLink</a></cite>, 2022.
+                            <cite title="JournoLink"><a
+                                    href="https://journolink.com/resources/post/319-fake-news-statistics-2019-uk-worldwide-data"
+                                    target="_blank" rel="noopener noreferrer">JournoLink</a></cite>, 2022.
                         </figcaption>
                     </figure>
 
                     <p>
-                        According to the International Computer and Information Literacy 2019 Study (ICILS) 
-                        of the International Association for the Evaluation of Educational Achievement (IEA), 
-                        <b>only 2% of the young people interviewed showed skills in selecting or identifying 
+                        According to the International Computer and Information Literacy 2019 Study (ICILS)
+                        of the International Association for the Evaluation of Educational Achievement (IEA),
+                        <b>only 2% of the young people interviewed showed skills in selecting or identifying
                             information online</b>, although 89% said they felt proficient at the task.
                     </p>
 
                     <p>
-                        And according to a survey by JournoLink 
+                        And according to a survey by JournoLink
                         45% of the British public believe they encounter fake news online every single day.
                     </p>
 
@@ -190,40 +193,114 @@
                 </div>
             </section>
 
+            <section id="explainer">
+                <div class="content">
 
-            <div class="row">
-                <div class="col-lg-9">
+                    <h3>What have we done about it</h3>
 
-                    <section id="explainer">
-                        <div class="content">
+                    <p>
+                        If fake news could be distinguished from real news then the spread of misinformation would
+                        reduce.
+                    </p>
+                    <p>
+                        This is why we have built a supervised machine learning model using Natural Language Programming
+                        (NLP) to predict whether the news is real or fake.
+                    </p>
 
-                            <h3>What have we done about it</h3>
+                    <!-- <a href="model.html">
+                                <button type="button" class="btn btn-outline-dark">Why Machine Learning?</button>
+                            </a> -->
 
-                            <p>
-                                If fake news could be distinguished from real news then the spread of misinformation would reduce.
-                            </p>
-                            <p>
-                                This is why we have built a supervised machine learning model using Natural Language Programming to predict whether the news is real or fake.
-                            </p>
-                        </div>
-                    </section>
+                    <br>
+
+                    <h3>Predicting Fake News with NLP</h3>
+
+                    <p>
+                        In order to have a good result with the machine learning model, 
+                        it is important to follow a series of steps, mainly related to the pre-processing of the data:
+                    </p>
                 </div>
-            </div>
 
+            </section>
+
+            <section id="hero-section">
+                <div class="hero-image">
+                    <img id="hero-image-0" class="visible" src="assets/images/MLprocess.png" />
+                </div>
+            </section>
+
+
+            <section id="explainer">
+                <div class="content">
+
+                    <h3>Pre-process Data</h3>
+
+                    <h4>Process Text</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Target Column: Title. Title words converted into lowercase, removed all stop words and special characters.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Tokenization</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Text data was tokenized with RegexpTokenizer() to split strings into substrings using regular expressions.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Stemmitization</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Stemming algorithm PorterStemmer() was used to stem the tokenized words (break down sentences into words).
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Train-Test Split</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Data was split into Train and Test data to evaluate the performance of our Machine Learning Algorithm.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Vectorize Train and Test Data</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                In NLP, Textual Data needs to be Vectorized because NLP Models can't understand Textual Data, only Numerical Value.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                We used CountVectorizer() as the last step in Pre-processing to encode all words and return integer count for the number of times each word occurs in a sentence.
+                            </p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </section>
 
             <section id="explainer">
 
                 <div class="hero-image">
 
-                    <img id="hero-image-6" src="assets/dataviz/fake1.jpg" />
-                    <img id="hero-image-7" src="assets/dataviz/real1.jpg" />
+                    <img id="hero-image-7" src="assets/dataviz/fake1.jpg" />
+                    <img id="hero-image-8" src="assets/dataviz/real1.jpg" />
 
                 </div>
 
                 <div class="content-wrapper">
                     <div class="column-right">
 
-                        <div class="step bordered" data-step="6">
+                        <div class="step bordered" data-step="7">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis exercitationem
                                 doloremque iure in, amet quisquam esse asperiores mollitia facere pariatur veniam
@@ -231,7 +308,7 @@
                             </p>
                         </div>
 
-                        <div class="step bordered" data-step="6">
+                        <div class="step bordered" data-step="8">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a libero iusto nobis
                                 officiis est repellat magnam adipisci aspernatur saepe laboriosam consequatur,
@@ -261,24 +338,18 @@
             </section>
 
 
+            <section id="explainer">
+                <div class="content">
 
-            <div class="row">
-                <div class="col-lg-9">
+                    <h3>How to...</h3>
 
-                    <section id="explainer">
-                        <div class="content">
-
-                            <h3>How to...</h3>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
-                                temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
-                                enim fugit optio dolor nemo aperiam doloremque laboriosam?
-                            </p>
-                        </div>
-                    </section>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
+                        temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
+                        enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                    </p>
                 </div>
-            </div>
+            </section>
 
 
 
@@ -294,16 +365,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <h4 style="color: #73A6D1;">References </h4>
+                    <h4>References </h4>
                     <ul>
                         <li>
-                            <p><a href="https://fullfact.org/toolkit/" target="_blank" rel="noopener noreferrer">Full Fact</a></p>
+                            <p><a href="https://fullfact.org/toolkit/" target="_blank" rel="noopener noreferrer">Full
+                                    Fact</a></p>
                         </li>
                         <li>
-                            <p>Video: Documentary by <a href="https://www.youtube.com/watch?v=PMv4Mbdf9HA" target="_blank" rel="noopener noreferrer">Connecticut Public</a></p>
+                            <p>Video: Documentary by <a href="https://www.youtube.com/watch?v=PMv4Mbdf9HA"
+                                    target="_blank" rel="noopener noreferrer">Connecticut Public</a></p>
                         </li>
                         <li>
-                            etc ...
+                            <p>"Marching for facts" picture <a
+                                    href="https://www.iir.cz/en/information-disorder-fake-news-and-the-future-of-democracy-1"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
+                        </li>
+                        <li>
+                            <p>"Q" picture <a
+                                    href="https://www.cbsnews.com/sanfrancisco/news/facebook-removes-qanon-vdare-accounts-conspiracy-hate-speech-asian-americans/"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
+                        </li>
+                        <li>
+                            <p>"Covid & 5G" picture <a
+                                    href="https://www.euractiv.com/section/5g/news/combat-5g-covid-19-fake-news-urges-europe/"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
                         </li>
                     </ul>
                 </div>
