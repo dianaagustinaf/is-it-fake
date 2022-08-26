@@ -95,7 +95,7 @@ We trialed 2 ways of tokenizing:
 ## Train-Test Split
 Data was split into Train and Test data to evaluate the performance of our Machine Learning Algorithm.
 
-## Models: 6 Binary Classification models
+## Machine Learning Models: 6 Binary Classification models
 We chose 6 machine learning algorithms best suited for Binary Classification problems to find the best model for predicting Fake New. This required an additonal preprocessing step: vectorisation - we used CountVectoriser.
 
 Result: SVM has the best score of all the models we tested. Support Vector Machine are very effective as a machine learning model with classification and regression problems. It also has low error rates - typically lower than Nueral Network models. 
@@ -106,7 +106,7 @@ Interestingly, the Naive Bayes MB Classifier did not work as well as expected. W
 
 Following the evaluations of the machine learning models we decided to trial out two deep learning models. We thought that the deep learning models might have a higher prediction rate than the machine learning models as deep learning is a sub group of artifical intelligence. 
 
-## NLP Sequential Model
+## Deep Learning: NLP Sequential Model
 
 For the Supervised Learning Model we used a Keras Sequential deep learning model. We created a neural network model and the resulting accuracy was higher than the previous models. This model works best as a binary classifier and additional layers were added to account for the text classification: the Embedding layer converts sequences into arrays of word vectors and the Dense layer classifyies arrays of word vectors.
 
@@ -129,7 +129,7 @@ To investigate this further we would:
 
 We predict that a Convultional Network Model would have a higher accuracy and lower error rate. This is because convultional neural networks automatically detect import features in addition to other advantages over other neural network models. 
 
-## BERT
+## Deep Learning: BERT
 
 Lastly, we trained a BERT model. BERT is a new method of pre-training language representations from Google which outperforms previous methods on a variety of Natural Language Processing (NLP) tasks. 
 
