@@ -74,7 +74,7 @@
                         Trump in the US presidential race.
                     </p>
                     <p>
-                        <b>Most fake news, however, is difficult to decipher</b> 
+                        <b>Most fake news, however, is difficult to decipher</b>
                         which has led to many people airing on the
                         side of caution and increasing their deep mistrust of the media.
                     </p>
@@ -190,12 +190,12 @@
                     <h3>What have we done about it</h3>
 
                     <p>
-                        If fake news could be distinguished from real news then the spread 
+                        If fake news could be distinguished from real news then the spread
                         of misinformation would reduce.
                     </p>
                     <p>
-                        This is why we have built supervised machine learning models 
-                        and deep learning models using <b>Natural Language Programming</b> (NLP) 
+                        This is why we have built supervised machine learning models
+                        and deep learning models using <b>Natural Language Programming</b> (NLP)
                         to predict whether the news is real or fake.
                     </p>
 
@@ -213,13 +213,13 @@
                         specifically NLP algorithms to counteract this. 
                     </p> -->
                     <p>
-                       <b>Fake News detection requires only Natural Language Understanding</b>. NLU is
-                        a sub-category of NLP that gives computers the ability to understand the meaning 
+                        <b>Fake News detection requires only Natural Language Understanding</b>. NLU is
+                        a sub-category of NLP that gives computers the ability to understand the meaning
                         of a piece of text.
                     </p>
                     <p>
-                        We hope this technology could be widely used in future to detect and 
-                        flag fake news and disinformation. 
+                        We hope this technology could be widely used in future to detect and
+                        flag fake news and disinformation.
                     </p>
 
                     <br>
@@ -227,20 +227,22 @@
                     <h3>The Data</h3>
                     <p>
                         We used the Fake News Detection dataset from a
-                        <a href="https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset" 
-                        target="_blank" rel="noopener noreferrer">Kaggle's Fake News Detection Competition</a>. 
-                        And we decided on this dataset as it was the most balanced and complete dataset we could find for our task.
+                        <a href="https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"
+                            target="_blank" rel="noopener noreferrer">Kaggle's Fake News Detection Competition</a>.
+                        And we decided on this dataset as it was the most balanced and complete dataset we could find
+                        for our task.
                     </p>
                     <p>
-                        The dataset was split into 2 files, true news and fake news, with 4 columns: 
-                        title, text, subject and date. 
-                        It contains 20826 Real News articles and 17903 Fake News articles. 
+                        The dataset was split into 2 files, true news and fake news, with 4 columns:
+                        title, text, subject and date.
+                        It contains 20826 Real News articles and 17903 Fake News articles.
                         This means our data is relatively balanced.
                     </p>
                     <!--  D  -->
                     <p>
-                        With over 50,000 rows of data, we began by undergoing data cleansing and data exploration, then 
-                        performing data analysis and sentiment analysis before building our Machine Learning and Deep Learning models.
+                        With over 50,000 rows of data, we began by undergoing data cleansing and data exploration, then
+                        performing data analysis and sentiment analysis before building our Machine Learning and Deep
+                        Learning models.
                     </p>
                 </div>
             </section>
@@ -264,21 +266,21 @@
 
                         <div class="step bordered" data-step="7">
                             <p>
-                                The use of histograms helps to visually compare differences between 
-                                fake news and real news. 
+                                The use of histograms helps to visually compare differences between
+                                fake news and real news.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="7">
                             <p>
-                                Fake news headlines on average tend to have more words, suggesting 
+                                Fake news headlines on average tend to have more words, suggesting
                                 they are longer in length.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="8">
                             <p>
-                                Real news headlines are shorter in length, with a majority of titles 
+                                Real news headlines are shorter in length, with a majority of titles
                                 being under 100 words.
                             </p>
                         </div>
@@ -290,40 +292,40 @@
                             </p>
                         </div>
 
-                        
+
                         <div class="step bordered" data-step="9">
                             <p>
-                                Although both datasets appear to be balanced, 
-                                Fake news article count appears to be more consistent throughout 
+                                Although both datasets appear to be balanced,
+                                Fake news article count appears to be more consistent throughout
                                 the timeframe of our dataset.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="10">
                             <p>
-                                While the Real News is consistent between 2016-2017, there is an increase 
-                                spike in August 2017. 
+                                While the Real News is consistent between 2016-2017, there is an increase
+                                spike in August 2017.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="11">
                             <p>
-                                These word clouds show sentiment analysis of headlines and content. 
-                                Text analysis shows an interesting consistency in both sets of data, 
+                                These word clouds show sentiment analysis of headlines and content.
+                                Text analysis shows an interesting consistency in both sets of data,
                                 which the word clouds interestingly display.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="12">
                             <p>
-                                Originally, Trump claimed he would run for president since the 1980s. 
-                                Most people believed this to be a publicity stunt. 
+                                Originally, Trump claimed he would run for president since the 1980s.
+                                Most people believed this to be a publicity stunt.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="12">
                             <p>
-                                As you can see from both word clouds, the shock of his claims coming 
+                                As you can see from both word clouds, the shock of his claims coming
                                 to fruition consistently made headlines during this time.
                             </p>
                         </div>
@@ -381,7 +383,8 @@
                         </li>
                         <li>
                             <p>
-                                The text data was tokenized using a <b>Tensforflow Tokenizer</b> library and then sequenced.
+                                The text data was tokenized using a <b>Tensforflow Tokenizer</b> library and then
+                                sequenced.
                             </p>
                         </li>
                     </ul>
@@ -429,7 +432,7 @@
                 <div class="content">
 
                     <h3>Choosing the best model</h3>
-<!-- 
+                    <!-- 
                     <p>
                         We used most of the dataset for our visualisations and data exploration but we decided early on to drop the date, 
                         text and subject columns and focus only on the titles of the news pieces rather than the whole text. 
@@ -437,34 +440,39 @@
 -->
 
                     <p>
-                        We took a 2 step approach. 
+                        We took a 2 step approach.
                     </p>
                     <p>
-                        Firstly, we implemented <b>6 Binary Classification Algorithms</b> to see 
-                        if we could accurately predict whether news was fake or real looking at the headlines (titles). 
+                        Firstly, we implemented <b>6 Binary Classification Algorithms</b> to see
+                        if we could accurately predict whether news was fake or real looking at the headlines (titles).
                     </p>
 
                     <p>
-                        Secondly, we implemented <b>2 different Deep Learning Models</b> to measure their accuracy to detect Fake News.
+                        Secondly, we implemented <b>2 different Deep Learning Models</b> to measure their accuracy to
+                        detect Fake News.
                     </p>
 
                     <section id="table">
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">
                                 <h4>Models Scores</h4>
-                              
+
                                 <p>
-                                    The <b>Super Vector Machine (SVM) classification had the best score out of the 6 Binary Classification Algorithms</b>  
-                                    we fitted on our dataset, with an accuracy score of 0.95 and F1 score of 0.95. 
+                                    The <b>Super Vector Machine (SVM) classification had the best score out of the 6
+                                        Binary Classification Algorithms</b>
+                                    we fitted on our dataset, with an accuracy score of 0.95 and F1 score of 0.95.
                                     The <b>PassiveAgressive Classification</b> was a close second.
                                 </p>
                                 <p>
-                                    SVM is mostly used for classification problems but can also be used for regression challenges. 
-                                    It doesn't perform very well when data has a lot of noise which wasn't an issue 
-                                    with our data but it took longer than all of the other models to fit as SVM's required training 
+                                    SVM is mostly used for classification problems but can also be used for regression
+                                    challenges.
+                                    It doesn't perform very well when data has a lot of noise which wasn't an issue
+                                    with our data but it took longer than all of the other models to fit as SVM's
+                                    required training
                                     time is higher.
                                 </p>
 
+                                <br>
                                 <thead class="table-dark">
                                     <tr style="text-align: left;">
 
@@ -543,15 +551,35 @@
             </section>
 
 
-            
+
             <section id="explainer">
                 <div class="content">
 
-                    <h3>Difference between NN & BERT</h3>
+                    <h3>Deep Learning Models</h3>
+
+                    <h4>Sequential Deep Learning Model</h4>
                     <p>
-                        The Difference between NN & BERT ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda repellat, in adipisci saepe quas modi voluptas delectus pariatur tempora nihil quaerat repudiandae mollitia illum! Nobis corporis quisquam eligendi iusto!
+                        In our Deep Learning Sequential Model most of the Pre-processing steps in our Machine Learning
+                        models were utilized with some minor exceptions. From the Keras library we used the KerasTuner
+                        hyperparameter optimization framework to tune our Neural Network and find the best
+                        hyperparameter values of our deep learning model.
                     </p>
 
+                    <h4>BERT (Unsupervised) Deep Learning Model</h4>
+                    <p>
+                        BERT is a new method of pre-training language representations from Google which outperforms
+                        previous methods on a variety of Natural Language Processing (NLP) tasks.
+                    </p>
+                    <p>
+                        BERT stands for “Bidirectional Encoder Representations from Transformers”. It uses a transformer
+                        model, applying the bidirectional training of Transformer using an encoder-decoder architecture.
+                        BERT only uses the encoder part of this architecture because its goal is to generate a language
+                        model.
+                    </p>
+                    <p>
+                        Apart from splitting the Test and Training data we skipped all the Pre-processing steps in our
+                        other Models because we used Tensorflow-hub’s BERT preprocessor and encoder.
+                    </p>
                 </div>
             </section>
 
@@ -561,7 +589,9 @@
                     <h3>Conclusions</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis consequatur ipsum hic sunt ex natus magnam deleniti corrupti quisquam ratione eaque explicabo laudantium quo totam, quaerat mollitia! Obcaecati, magni.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis consequatur ipsum
+                        hic sunt ex natus magnam deleniti corrupti quisquam ratione eaque explicabo laudantium quo
+                        totam, quaerat mollitia! Obcaecati, magni.
                     </p>
 
                 </div>
@@ -585,6 +615,11 @@
                         <li>
                             <p><a href="https://fullfact.org/toolkit/" target="_blank" rel="noopener noreferrer">Full
                                     Fact</a></p>
+                        </li>
+                        <li>
+                            <p>
+                               Scrollytelling with <a href="https://github.com/russellgoldenberg/scrollama" target="_blank" rel="noopener noreferrer">Scrollama Library</a>
+                            </p>
                         </li>
                         <li>
                             <p>Video: Documentary by <a href="https://www.youtube.com/watch?v=PMv4Mbdf9HA"
