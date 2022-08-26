@@ -1,4 +1,4 @@
-# Real or Fake News? A Machine Learning Model to Detect Fake News 🧠
+# Real or Fake News? Machine & Deep Learning Models to Detect Fake News 🧠
 
 ![image](https://user-images.githubusercontent.com/100214297/186528994-8007a67a-b285-466c-91f5-8c872666d5df.png)
 
@@ -38,7 +38,9 @@ Machine Learning: Supervised machine learning with Natural Language Programming 
 ### Front-End & Data Visualisation:
 
 Web Design Structure: HTML, CSS (inc. Bootstrap) 
+
 Data Visualisations: D3, Plotly Express, Matplotlib 
+
 Storytelling: Scrollama (JS library)
 
 ## Machine Learning Process
