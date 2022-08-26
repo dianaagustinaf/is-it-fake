@@ -10,7 +10,7 @@ Most fake news, however, is difficult to decipher which has led to many people a
 
 Approximately 45% of adults in the UK believe they see or read fake news everyday (JournoLink, 2022).
  
-### Definition of fake news: 
+### Definition of Fake News: 
 
     ‘false stories that appear to be news, spread on the internet or using other media, usually created to influence political views or as a joke' - Cambridge Dictionary
 
@@ -80,7 +80,7 @@ Evaluate Models
 
 Test Models
 
-## Initial Data exploration and Visualisation
+## Initial Data Exploration & Visualisation
 
 ![image](https://user-images.githubusercontent.com/100214297/186917543-76f60990-8c97-47ef-99fd-5f0bc20f1c7f.png) ![image](https://user-images.githubusercontent.com/100214297/186917583-7424d04f-faa0-4c65-8d8e-36fc697b453b.png)
 
