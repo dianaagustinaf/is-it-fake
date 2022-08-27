@@ -22,15 +22,16 @@ Front-end repo [here](https://github.com/dianaagustinaf/is-it-fake.git)
 
 ![image](https://user-images.githubusercontent.com/100214297/186919181-64c6c7e1-e3c5-4d76-ad2a-c03ecb68b863.png)
 
-## Dataset:
-
-Click [here](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download) for original Kaggle data
-
 ## Project Documents:
 
 For the slide deck, click [here](https://docs.google.com/presentation/d/1GuZqyH5beTkdlSVHvW3VFpkTJ-X8M5PPtEA4Z7mz7Gk/edit?usp=sharing)
 
 For the research proposal, click [here](https://docs.google.com/document/d/1JX4Fl6wIcuG8v-ZcGFkWJIUjBuZ-V_bVmKsUdEqUpb0/edit?usp=sharing)
+
+## Dataset:
+
+Click [here](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download) for original Kaggle data
+
 
 ### Back-End Tools:
 
@@ -45,7 +46,7 @@ Machine Learning: Supervised machine learning with Natural Language Programming 
 
 Web Design Structure: HTML, CSS (inc. Bootstrap) 
 
-Data Visualisations: Plotly Express, Matplotlib, Word Cloud
+Data Visualisations: Plotly Express, Matplotlib, Word Cloud, Seaborn
 
 Storytelling: Scrollama (JS library)
 
@@ -57,7 +58,7 @@ AI  ⇨  Machine Learning ⇨  Deep Learning
 
 ## Initial Data Analysis
 
-![image](https://user-images.githubusercontent.com/100214297/186917543-76f60990-8c97-47ef-99fd-5f0bc20f1c7f.png) ![image](https://user-images.githubusercontent.com/100214297/186917583-7424d04f-faa0-4c65-8d8e-36fc697b453b.png)
+![image](https://github.com/Shannon-Watts/fake_news_ML/blob/main/data-visualisations/viz/fig2.png) ![image](https://github.com/Shannon-Watts/fake_news_ML/blob/main/data-visualisations/viz/fig1.png)
 
 ## Pre-processing the Data
 Target Column: Title. Title words converted into lowercase, removed all stop words and special characters. 
@@ -119,6 +120,12 @@ Apart from splitting the Test and Training data we skipped all the Pre-processin
 The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed relatively well on Predicting Fake News after just 5 epochs. 
 
 The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed relatively well on Predicting Fake News after just 5 epochs. 
+
+# Confusion Matrix
+
+From the models its clear KNN model perfomed worst in comparsion to SVM model that performed best. The use of the confusion matrix allows us to visually compare and analysis the results of all models. 
+
+![cm](https://github.com/dianaagustinaf/is-it-fake/blob/main/assets/dataviz/confusionmatrix.png)
 
 # Analysis
 We tested our NLP model on completely new unseen data. We chose fake news text and true news text and ran it through our model. 
