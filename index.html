@@ -235,7 +235,7 @@
                     <p>
                         The dataset was split into 2 files, true news and fake news, with 4 columns:
                         title, text, subject and date.
-                        It contains 20826 Real News articles and 17903 Fake News articles.
+                        <b>It contains 20826 Real News articles and 17903 Fake News articles.</b>
                         This means our data is relatively balanced.
                     </p>
                     <!--  D  -->
@@ -285,12 +285,12 @@
                             </p>
                         </div>
 
-                        <div class="step bordered" data-step="8">
+                        <!-- <div class="step bordered" data-step="8">
                             <p>
                                 The difference in the length of the headings can bias ....
                                 this may affect our models
                             </p>
-                        </div>
+                        </div> -->
 
 
                         <div class="step bordered" data-step="9">
@@ -305,6 +305,12 @@
                             <p>
                                 While the Real News is consistent between 2016-2017, there is an increase
                                 spike in August 2017.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="10">
+                            <p>
+                                To avoid bias in the dataset we have removed this column as well.
                             </p>
                         </div>
 
@@ -539,7 +545,7 @@
                         </div>
                     </section>
 
-                    <h3>Confusion matrix (MOCKUP)</h3>
+                    <h3>Confusion matrix</h3>
 
                 </div>
             </section>
@@ -566,13 +572,13 @@
                         layer classifyies arrays of word vectors.
                     </p>
 
-                    <img src="assets/dataviz/DL-Seq.png" alt="">
+                    <img src="assets/dataviz/DL-Seq.png" alt="" style="padding-bottom: 30px;">
 
                     <p>
                         The below plot highlights the accuracy of the model:
                     </p>
 
-                    <img src="assets/dataviz/DL-Seq-Accuracy.png" alt="">
+                    <img src="assets/dataviz/DL-Seq-Accuracy.png" width="600px" alt="">
 
                     <p>
                         Although, we suspected that the model may have overfitted on the training data due to the low
@@ -585,7 +591,7 @@
                     </p>
 
                     <p>
-                        To investigate this further we would:
+                        <b>To investigate this further we would:</b>
                     </p>
 
                     <ol>
