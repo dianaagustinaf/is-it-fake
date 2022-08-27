@@ -26,6 +26,11 @@ Front-end repo [here](https://github.com/dianaagustinaf/is-it-fake.git)
 
 Click [here](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download) for original Kaggle data
 
+## Project Documents:
+
+For the slide deck, click [here](https://docs.google.com/presentation/d/1GuZqyH5beTkdlSVHvW3VFpkTJ-X8M5PPtEA4Z7mz7Gk/edit?usp=sharing)
+
+For the research proposal, click [here](https://docs.google.com/document/d/1JX4Fl6wIcuG8v-ZcGFkWJIUjBuZ-V_bVmKsUdEqUpb0/edit?usp=sharing)
 
 ### Back-End Tools:
 
@@ -105,14 +110,15 @@ Lastly, we trained a BERT model. BERT is a new method of pre-training language r
 
 BERT stands for “Bidirectional Encoder Representations from Transformers”. It uses a transformer model, applying the bidirectional training of Transformer using an encoder-decoder architecture. BERT only uses the encoder part of this architecture because its goal is to generate a language model.
 
+![image](https://user-images.githubusercontent.com/100214297/187019685-f491d1cc-69f4-4fa8-b3b2-8a3b24dcddae.png)
+
 Apart from splitting the Test and Training data we skipped all the Pre-processing steps in our other Models because we used Tensorflow-hub’s BERT preprocesser and encoder.
 
-## Comparison of Models
-We used confusion matricies to evaluate the models, and we this is what we found:
+![image](https://user-images.githubusercontent.com/100214297/187019694-da0f0ff7-eaf2-46b0-bc31-9d529e5d3dd8.png)
 
-[ADD IN CM (SHOLA)]
+The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed relatively well on Predicting Fake News after just 5 epochs. 
 
-Also we thought that the data was potentially overfiiting to the training data. Further steps to combat this would be ..... [RESEARCH]
+The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed relatively well on Predicting Fake News after just 5 epochs. 
 
 # Analysis
 We tested our NLP model on completely new unseen data. We chose fake news text and true news text and ran it through our model. 
