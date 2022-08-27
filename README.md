@@ -26,6 +26,11 @@ Front-end repo [here](https://github.com/dianaagustinaf/is-it-fake.git)
 
 Click [here](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download) for original Kaggle data
 
+## Project Documents:
+
+For the slide deck, click [here](https://docs.google.com/presentation/d/1GuZqyH5beTkdlSVHvW3VFpkTJ-X8M5PPtEA4Z7mz7Gk/edit?usp=sharing)
+
+For the research proposal, click [here](https://docs.google.com/document/d/1JX4Fl6wIcuG8v-ZcGFkWJIUjBuZ-V_bVmKsUdEqUpb0/edit?usp=sharing)
 
 ### Back-End Tools:
 
