@@ -555,20 +555,62 @@
             <section id="explainer">
                 <div class="content">
 
-                    <h3>Deep Learning Models</h3>
+                    <h3>Deep Learning Neural Network Models</h3>
 
-                    <h4>Sequential Deep Learning Model</h4>
+                    <h4>NLP Sequential Model</h4>
                     <p>
-                        In our Deep Learning Sequential Model most of the Pre-processing steps in our Machine Learning
-                        models were utilized with some minor exceptions. From the Keras library we used the KerasTuner
-                        hyperparameter optimization framework to tune our Neural Network and find the best
-                        hyperparameter values of our deep learning model.
+                        For the Supervised Learning Model we used a Keras Sequential deep learning model. We created a
+                        neural network model and the resulting accuracy was higher than the previous models. This model
+                        works best as a binary classifier and additional layers were added to account for the text
+                        classification: the Embedding layer converts sequences into arrays of word vectors and the Dense
+                        layer classifyies arrays of word vectors.
                     </p>
 
-                    <h4>BERT (Unsupervised) Deep Learning Model</h4>
+                    <img src="assets/dataviz/DL-Seq.png" alt="">
+
+                    <p>
+                        The below plot highlights the accuracy of the model:
+                    </p>
+
+                    <img src="assets/dataviz/DL-Seq-Accuracy.png" alt="">
+
+                    <p>
+                        Although, we suspected that the model may have overfitted on the training data due to the low
+                        loss rate and high accuracy rate in addition to the slight increase in the validation loss.
+                    </p>
+
+                    <p>
+                        In addition to this, this model had a slighlty lower accuracy rate than the Support Vector
+                        Machine model.
+                    </p>
+
+                    <p>
+                        To investigate this further we would:
+                    </p>
+
+                    <ol>
+                        <li>
+                            train a SVM model on the same preprocessed data that the NN model was trained on.
+                        </li>
+                        <li>
+                            run the SVM model fully and compare the loss in addition to the accuracy to the NN model.
+                        </li>
+                        <li>
+                            compile and train a convolutional network model to see how this compares to SVM and NN
+                            models.
+                        </li>
+                    </ol>
+
+                    <p>
+                        We predict that a Convolutional Network Model would have a higher accuracy and lower error rate.
+                        This is because convolutional neural networks automatically detect import features in addition
+                        to other advantages over other neural network models.
+                    </p>
+
+                    <h4>BERT Model using Tensor-flow's hub</h4>
                     <p>
                         BERT is a new method of pre-training language representations from Google which outperforms
-                        previous methods on a variety of Natural Language Processing (NLP) tasks.
+                        previous methods on a variety of NLP tasks.
                     </p>
                     <p>
                         BERT stands for “Bidirectional Encoder Representations from Transformers”. It uses a transformer
@@ -578,8 +620,32 @@
                     </p>
                     <p>
                         Apart from splitting the Test and Training data we skipped all the Pre-processing steps in our
-                        other Models because we used Tensorflow-hub’s BERT preprocessor and encoder.
+                        other Models because we used Tensorflow-hub's BERT preprocessor and encoder.
                     </p>
+
+                    <img src="assets/dataviz/bert-proc.png" width="800px" alt="">
+
+                    <p>
+                        The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing
+                        data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed
+                        relatively well on Predicting Fake News after just 5 epochs.
+                    </p>
+
+                    <img src="assets/dataviz/bert-accu.png" width="600px" alt="">
+
+                    <p>
+                        This model was different in that it was designed to predict whether news was Real or Fake by
+                        giving it a score between 0 and 1. Like the previous Neural Network model it could be used to
+                        create a web application to predict Fake or Real news, where the user could input the title of
+                        an article and the application would predict the probability of it being either Real or Fake.
+                    </p>
+
+                    <p>
+                        BERT is quite powerful and is preferred for it's ease of use and how simple it is in quickly
+                        building machine learning models and in our case the dataset was probably too small to showcase
+                        its total power.
+                    </p>
+
                 </div>
             </section>
 
@@ -618,7 +684,8 @@
                         </li>
                         <li>
                             <p>
-                               Scrollytelling with <a href="https://github.com/russellgoldenberg/scrollama" target="_blank" rel="noopener noreferrer">Scrollama Library</a>
+                                Scrollytelling with <a href="https://github.com/russellgoldenberg/scrollama"
+                                    target="_blank" rel="noopener noreferrer">Scrollama Library</a>
                             </p>
                         </li>
                         <li>
