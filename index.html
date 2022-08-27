@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is it fake?</title>
+    <link rel="icon" href="assets/images/FD/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,7 +17,8 @@
     <!-- /////////////////   NAVBAR    //////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-light-color" style="font-size: 150%; font-weight: bold;" href="index.html">Is it fake?</a>
+            <a class="navbar-brand text-light-color" style="font-size: 160%; font-weight: bold;" href="index.html">Is it
+                fake?</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,17 +27,6 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            ML Model
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="model.html">Model</a></li>
-                            <li><a class="dropdown-item" href="data.html">Data</a></li>
-                        </ul>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link active" href="toolkit.html">Toolkit</a>
                     </li>
@@ -75,7 +66,7 @@
             <section id="explainer">
                 <div class="content">
                     <p>
-                        Can anyone tell what is true and what is fake news anymore? 
+                        Can anyone tell what is true and what is fake news anymore?
                     </p>
                     <p>
                         From the weaponisation of Covid-19,
@@ -83,20 +74,21 @@
                         Trump in the US presidential race.
                     </p>
                     <p>
-                        Most fake news, however, is difficult to decipher which has led to many people airing on the
+                        <b>Most fake news, however, is difficult to decipher</b>
+                        which has led to many people airing on the
                         side of caution and increasing their deep mistrust of the media.
                     </p>
                 </div>
             </section>
 
             <section>
-                <video id="hero-video" controls>
+                <video id="hero-video" controls poster="assets/video/poster1_ML.jpg">
                     <source src="assets/video/introfakenews.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </section>
 
-            
+
             <section id="explainer">
                 <div class="content">
                     <h3>What is fake news</h3>
@@ -104,28 +96,30 @@
                         Fake news is misleading information deliberately spread as “news” typically online.
                     </p>
                     <p>
-                        There is an important difference between fake news and simply inaccurate reporting: 
+                        There is an important difference between fake news and simply inaccurate reporting:
                         fake news implies that the <b>misinformation is absolutely deliberate</b>.
                     </p>
 
                     <figure>
                         <blockquote class="blockquote pull-quote">
-                          <p>About half of adults in the UK believe they see or read fake news everyday.</p>
+                            <p>About half of adults in the UK believe they see or read fake news everyday.</p>
                         </blockquote>
                         <figcaption class="blockquote-footer">
-                          <cite title="JournoLink"><a href="https://journolink.com/resources/post/319-fake-news-statistics-2019-uk-worldwide-data" target="_blank" rel="noopener noreferrer">JournoLink</a></cite>, 2022.
+                            <cite title="JournoLink"><a
+                                    href="https://journolink.com/resources/post/319-fake-news-statistics-2019-uk-worldwide-data"
+                                    target="_blank" rel="noopener noreferrer">JournoLink</a></cite>, 2022.
                         </figcaption>
                     </figure>
 
                     <p>
-                        According to the International Computer and Information Literacy 2019 Study (ICILS) 
-                        of the International Association for the Evaluation of Educational Achievement (IEA), 
-                        <b>only 2% of the young people interviewed showed skills in selecting or identifying 
+                        According to the International Computer and Information Literacy 2019 Study (ICILS)
+                        of the International Association for the Evaluation of Educational Achievement (IEA),
+                        <b>only 2% of the young people interviewed showed skills in selecting or identifying
                             information online</b>, although 89% said they felt proficient at the task.
                     </p>
 
                     <p>
-                        And according to a survey by JournoLink 
+                        And according to a survey by JournoLink
                         45% of the British public believe they encounter fake news online every single day.
                     </p>
 
@@ -138,7 +132,7 @@
             </section>
 
             <section>
-                <video id="hero-video" controls>
+                <video id="hero-video" controls poster="assets/video/poster2_ML.jpg">
                     <source src="assets/video/library-internet.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -190,69 +184,149 @@
                 </div>
             </section>
 
+            <section id="explainer">
+                <div class="content">
 
-            <div class="row">
-                <div class="col-lg-9">
+                    <h3>What have we done about it</h3>
 
-                    <section id="explainer">
-                        <div class="content">
+                    <p>
+                        If fake news could be distinguished from real news then the spread
+                        of misinformation would reduce.
+                    </p>
+                    <p>
+                        This is why we have built supervised machine learning models
+                        and deep learning models using <b>Natural Language Programming</b> (NLP)
+                        to predict whether the news is real or fake.
+                    </p>
 
-                            <h3>What have we done about it</h3>
+                    <!-- <a href="model.html">
+                                <button type="button" class="btn btn-outline-dark">Why Machine Learning?</button>
+                            </a> -->
+                    <!-- 
+                    <br>
 
-                            <p>
-                                If fake news could be distinguished from real news then the spread of misinformation would reduce.
-                            </p>
-                            <p>
-                                This is why we have built a supervised machine learning model using Natural Language Programming to predict whether the news is real or fake.
-                            </p>
-                        </div>
-                    </section>
+                    <h3>Why Machine Learning?</h3>
+
+                    <p>
+                        Biased software on internet and social media platforms has only amplified Fake News 
+                        so we decided to use Machine Learning, 
+                        specifically NLP algorithms to counteract this. 
+                    </p> -->
+                    <p>
+                        <b>Fake News detection requires only Natural Language Understanding</b>. NLU is
+                        a sub-category of NLP that gives computers the ability to understand the meaning
+                        of a piece of text.
+                    </p>
+                    <p>
+                        We hope this technology could be widely used in future to detect and
+                        flag fake news and disinformation.
+                    </p>
+
+                    <br>
+
+                    <h3>The Data</h3>
+                    <p>
+                        We used the Fake News Detection dataset from a
+                        <a href="https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"
+                            target="_blank" rel="noopener noreferrer">Kaggle's Fake News Detection Competition</a>.
+                        And we decided on this dataset as it was the most balanced and complete dataset we could find
+                        for our task.
+                    </p>
+                    <p>
+                        The dataset was split into 2 files, true news and fake news, with 4 columns:
+                        title, text, subject and date.
+                        It contains 20826 Real News articles and 17903 Fake News articles.
+                        This means our data is relatively balanced.
+                    </p>
+                    <!--  D  -->
+                    <p>
+                        With over 50,000 rows of data, we began by undergoing data cleansing and data exploration, then
+                        performing data analysis and sentiment analysis before building our Machine Learning and Deep
+                        Learning models.
+                    </p>
                 </div>
-            </div>
+            </section>
 
 
             <section id="explainer">
 
                 <div class="hero-image">
 
-                    <img id="hero-image-6" src="assets/dataviz/fake1.jpg" />
-                    <img id="hero-image-7" src="assets/dataviz/real1.jpg" />
+                    <img id="hero-image-7" class="visible" src="assets/dataviz/fake-titles.png" />
+                    <img id="hero-image-8" src="assets/dataviz/real-titles.png" />
+                    <img id="hero-image-9" src="assets/dataviz/fake-article-dates.png" />
+                    <img id="hero-image-10" src="assets/dataviz/real-article-dates.png" />
+                    <img id="hero-image-11" src="assets/dataviz/fake-news-wc.png" />
+                    <img id="hero-image-12" src="assets/dataviz/real-news-wc.png" />
 
                 </div>
 
                 <div class="content-wrapper">
                     <div class="column-right">
 
-                        <div class="step bordered" data-step="6">
+                        <div class="step bordered" data-step="7">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis exercitationem
-                                doloremque iure in, amet quisquam esse asperiores mollitia facere pariatur veniam
-                                laudantium dolorem quam? Esse atque temporibus fugiat sapiente?
-                            </p>
-                        </div>
-
-                        <div class="step bordered" data-step="6">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a libero iusto nobis
-                                officiis est repellat magnam adipisci aspernatur saepe laboriosam consequatur,
-                                repudiandae, asperiores dolore in aliquid nulla accusantium enim.
+                                The use of histograms helps to visually compare differences between
+                                fake news and real news.
                             </p>
                         </div>
 
                         <div class="step bordered" data-step="7">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus tempore
-                                temporibus laboriosam quos adipisci obcaecati animi harum numquam praesentium, inventore
-                                est illum aspernatur corrupti quibusdam ea ipsa explicabo ratione?
+                                Fake news headlines on average tend to have more words, suggesting
+                                they are longer in length.
                             </p>
                         </div>
 
-                        <div class="step bordered" data-step="7">
+                        <div class="step bordered" data-step="8">
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, accusamus.
-                                Reprehenderit dicta cumque, temporibus, mollitia enim consequatur modi quia nam
-                                excepturi voluptatem eveniet voluptatibus architecto sapiente quae perspiciatis soluta
-                                molestias.
+                                Real news headlines are shorter in length, with a majority of titles
+                                being under 100 words.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="8">
+                            <p>
+                                The difference in the length of the headings can bias ....
+                                this may affect our models
+                            </p>
+                        </div>
+
+
+                        <div class="step bordered" data-step="9">
+                            <p>
+                                Although both datasets appear to be balanced,
+                                Fake news article count appears to be more consistent throughout
+                                the timeframe of our dataset.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="10">
+                            <p>
+                                While the Real News is consistent between 2016-2017, there is an increase
+                                spike in August 2017.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="11">
+                            <p>
+                                These word clouds show sentiment analysis of headlines and content.
+                                Text analysis shows an interesting consistency in both sets of data,
+                                which the word clouds interestingly display.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="12">
+                            <p>
+                                Originally, Trump claimed he would run for president since the 1980s.
+                                Most people believed this to be a publicity stunt.
+                            </p>
+                        </div>
+
+                        <div class="step bordered" data-step="12">
+                            <p>
+                                As you can see from both word clouds, the shock of his claims coming
+                                to fruition consistently made headlines during this time.
                             </p>
                         </div>
 
@@ -262,24 +336,332 @@
 
 
 
-            <div class="row">
-                <div class="col-lg-9">
+            <section id="explainer">
+                <div class="content">
+                    <h3>Predicting Fake News with NLP</h3>
 
-                    <section id="explainer">
-                        <div class="content">
+                    <p>
+                        In order to have a good result with the machine learning model,
+                        it is important to follow a series of steps, mainly related to the pre-processing of the data:
+                    </p>
 
-                            <h3>How to...</h3>
+                </div>
+            </section>
 
+            <section id="hero-section">
+                <div class="hero-image">
+                    <img id="hero-image-0" class="visible" src="assets/dataviz/MLprocess.png" />
+                </div>
+            </section>
+
+
+            <section id="explainer">
+                <div class="content">
+
+                    <h3>Pre-process Data</h3>
+
+                    <h4>Process Text</h4>
+                    <ul>
+                        <li>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, reprehenderit
-                                temporibus. Quasi quibusdam culpa sunt eos quam, quos tenetur. Eius, ducimus possimus
-                                enim fugit optio dolor nemo aperiam doloremque laboriosam?
+                                Target Column: Title. Title words converted into lowercase,
+                                removed all stop words and special characters.
                             </p>
+                        </li>
+                    </ul>
+
+                    <h4>Tokenization</h4>
+                    <ul>
+                        <p>We trialed 2 ways of tokenizing:</p>
+                        <li>
+                            <p>
+                                Text data was tokenized with <b>RegexpTokenizer()</b> to split strings into substrings
+                                using regular expressions.
+                                and then a Stemming algorithm <b>PorterStemmer()</b>
+                                was used to stem the tokenized words (break down sentences into words).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The text data was tokenized using a <b>Tensforflow Tokenizer</b> library and then
+                                sequenced.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Stemmitization</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Stemming algorithm <b>PorterStemmer()</b> was used to stem the tokenized words
+                                (break down sentences into words).
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Train-Test Split</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Data was split into Train and Test data to evaluate the performance of our
+                                Machine Learning Algorithm.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>Vectorize Train and Test Data</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                In NLP, Textual Data needs to be Vectorized because NLP Models can't
+                                understand Textual Data, only Numerical Value.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                We used <b>CountVectorizer()</b> as the last step in Pre-processing to encode all words
+                                and return integer count for the number of times each word occurs in a sentence.
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section id="explainer">
+                <div class="content">
+
+                    <h3>Choosing the best model</h3>
+                    <!-- 
+                    <p>
+                        We used most of the dataset for our visualisations and data exploration but we decided early on to drop the date, 
+                        text and subject columns and focus only on the titles of the news pieces rather than the whole text. 
+                    </p> 
+-->
+
+                    <p>
+                        We took a 2 step approach.
+                    </p>
+                    <p>
+                        Firstly, we implemented <b>6 Binary Classification Algorithms</b> to see
+                        if we could accurately predict whether news was fake or real looking at the headlines (titles).
+                    </p>
+
+                    <p>
+                        Secondly, we implemented <b>2 different Deep Learning Models</b> to measure their accuracy to
+                        detect Fake News.
+                    </p>
+
+                    <section id="table">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <h4>Models Scores</h4>
+
+                                <p>
+                                    The <b>Super Vector Machine (SVM) classification had the best score out of the 6
+                                        Binary Classification Algorithms</b>
+                                    we fitted on our dataset, with an accuracy score of 0.95 and F1 score of 0.95.
+                                    The <b>PassiveAgressive Classification</b> was a close second.
+                                </p>
+                                <p>
+                                    SVM is mostly used for classification problems but can also be used for regression
+                                    challenges.
+                                    It doesn't perform very well when data has a lot of noise which wasn't an issue
+                                    with our data but it took longer than all of the other models to fit as SVM's
+                                    required training
+                                    time is higher.
+                                </p>
+
+                                <br>
+                                <thead class="table-dark">
+                                    <tr style="text-align: left;">
+
+                                        <th></th>
+                                        <th>classifier</th>
+                                        <th>accuracy</th>
+                                        <th>recall</th>
+                                        <th>precision</th>
+                                        <th>f1_score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>0</th>
+                                        <td>SVM</td>
+                                        <td>0.951209</td>
+                                        <td>0.928649</td>
+                                        <td>0.971903</td>
+                                        <td>0.949783</td>
+                                    </tr>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>PassiveAggressiveClassifier</td>
+                                        <td>0.942793</td>
+                                        <td>0.935562</td>
+                                        <td>0.944560</td>
+                                        <td>0.940039</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>RandomForestClassifier</td>
+                                        <td>0.936168</td>
+                                        <td>0.918796</td>
+                                        <td>0.949463</td>
+                                        <td>0.933877</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>MultinomialNB</td>
+                                        <td>0.933393</td>
+                                        <td>0.940483</td>
+                                        <td>0.917782</td>
+                                        <td>0.928994</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>AdaBoostClassifier</td>
+                                        <td>0.846106</td>
+                                        <td>0.776714</td>
+                                        <td>0.948520</td>
+                                        <td>0.854062</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>KNeighborsClassifier</td>
+                                        <td>0.763026</td>
+                                        <td>0.831007</td>
+                                        <td>0.628701</td>
+                                        <td>0.715835</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                         </div>
                     </section>
-                </div>
-            </div>
 
+                    <h3>Confusion matrix (MOCKUP)</h3>
+
+                </div>
+            </section>
+
+            <section id="hero-section">
+                <div class="hero-image">
+                    <img id="hero-image-0" class="visible" src="assets/dataviz/confusionmatrix.png" />
+                </div>
+            </section>
+
+
+
+            <section id="explainer">
+                <div class="content">
+
+                    <h3>Deep Learning Neural Network Models</h3>
+
+                    <h4>NLP Sequential Model</h4>
+                    <p>
+                        For the Supervised Learning Model we used a Keras Sequential deep learning model. We created a
+                        neural network model and the resulting accuracy was higher than the previous models. This model
+                        works best as a binary classifier and additional layers were added to account for the text
+                        classification: the Embedding layer converts sequences into arrays of word vectors and the Dense
+                        layer classifyies arrays of word vectors.
+                    </p>
+
+                    <img src="assets/dataviz/DL-Seq.png" alt="">
+
+                    <p>
+                        The below plot highlights the accuracy of the model:
+                    </p>
+
+                    <img src="assets/dataviz/DL-Seq-Accuracy.png" alt="">
+
+                    <p>
+                        Although, we suspected that the model may have overfitted on the training data due to the low
+                        loss rate and high accuracy rate in addition to the slight increase in the validation loss.
+                    </p>
+
+                    <p>
+                        In addition to this, this model had a slighlty lower accuracy rate than the Support Vector
+                        Machine model.
+                    </p>
+
+                    <p>
+                        To investigate this further we would:
+                    </p>
+
+                    <ol>
+                        <li>
+                            train a SVM model on the same preprocessed data that the NN model was trained on.
+                        </li>
+                        <li>
+                            run the SVM model fully and compare the loss in addition to the accuracy to the NN model.
+                        </li>
+                        <li>
+                            compile and train a convolutional network model to see how this compares to SVM and NN
+                            models.
+                        </li>
+                    </ol>
+
+                    <p>
+                        We predict that a Convolutional Network Model would have a higher accuracy and lower error rate.
+                        This is because convolutional neural networks automatically detect import features in addition
+                        to other advantages over other neural network models.
+                    </p>
+
+                    <h4>BERT Model using Tensor-flow's hub</h4>
+                    <p>
+                        BERT is a new method of pre-training language representations from Google which outperforms
+                        previous methods on a variety of NLP tasks.
+                    </p>
+                    <p>
+                        BERT stands for “Bidirectional Encoder Representations from Transformers”. It uses a transformer
+                        model, applying the bidirectional training of Transformer using an encoder-decoder architecture.
+                        BERT only uses the encoder part of this architecture because its goal is to generate a language
+                        model.
+                    </p>
+                    <p>
+                        Apart from splitting the Test and Training data we skipped all the Pre-processing steps in our
+                        other Models because we used Tensorflow-hub's BERT preprocessor and encoder.
+                    </p>
+
+                    <img src="assets/dataviz/bert-proc.png" width="800px" alt="">
+
+                    <p>
+                        The model reached an accuracy level of almost 0.90 and a low loss score of 0.23 on the testing
+                        data. The validation accuracy starts to dip slightly after 3 epochs but the BERT Model performed
+                        relatively well on Predicting Fake News after just 5 epochs.
+                    </p>
+
+                    <img src="assets/dataviz/bert-accu.png" width="600px" alt="">
+
+                    <p>
+                        This model was different in that it was designed to predict whether news was Real or Fake by
+                        giving it a score between 0 and 1. Like the previous Neural Network model it could be used to
+                        create a web application to predict Fake or Real news, where the user could input the title of
+                        an article and the application would predict the probability of it being either Real or Fake.
+                    </p>
+
+                    <p>
+                        BERT is quite powerful and is preferred for it's ease of use and how simple it is in quickly
+                        building machine learning models and in our case the dataset was probably too small to showcase
+                        its total power.
+                    </p>
+
+                </div>
+            </section>
+
+
+            <section id="explainer">
+                <div class="content">
+                    <h3>Conclusions</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis consequatur ipsum
+                        hic sunt ex natus magnam deleniti corrupti quisquam ratione eaque explicabo laudantium quo
+                        totam, quaerat mollitia! Obcaecati, magni.
+                    </p>
+
+                </div>
+            </section>
 
 
         </article>
@@ -294,16 +676,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <h4 style="color: #73A6D1;">References </h4>
+                    <h4>References </h4>
                     <ul>
                         <li>
-                            <p><a href="https://fullfact.org/toolkit/" target="_blank" rel="noopener noreferrer">Full Fact</a></p>
+                            <p><a href="https://fullfact.org/toolkit/" target="_blank" rel="noopener noreferrer">Full
+                                    Fact</a></p>
                         </li>
                         <li>
-                            <p>Video: Documentary by <a href="https://www.youtube.com/watch?v=PMv4Mbdf9HA" target="_blank" rel="noopener noreferrer">Connecticut Public</a></p>
+                            <p>
+                                Scrollytelling with <a href="https://github.com/russellgoldenberg/scrollama"
+                                    target="_blank" rel="noopener noreferrer">Scrollama Library</a>
+                            </p>
                         </li>
                         <li>
-                            etc ...
+                            <p>Video: Documentary by <a href="https://www.youtube.com/watch?v=PMv4Mbdf9HA"
+                                    target="_blank" rel="noopener noreferrer">Connecticut Public</a></p>
+                        </li>
+                        <li>
+                            <p>"Marching for facts" picture <a
+                                    href="https://www.iir.cz/en/information-disorder-fake-news-and-the-future-of-democracy-1"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
+                        </li>
+                        <li>
+                            <p>"Q" picture <a
+                                    href="https://www.cbsnews.com/sanfrancisco/news/facebook-removes-qanon-vdare-accounts-conspiracy-hate-speech-asian-americans/"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
+                        </li>
+                        <li>
+                            <p>"Covid & 5G" picture <a
+                                    href="https://www.euractiv.com/section/5g/news/combat-5g-covid-19-fake-news-urges-europe/"
+                                    target="_blank" rel="noopener noreferrer"> source</a>.</p>
                         </li>
                     </ul>
                 </div>
@@ -315,6 +717,7 @@
     <script src="https://unpkg.com/intersection-observer"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script type='text/javascript' src='assets/js/scrolly.js'></script>
+    <script type='text/javascript' src='assets/js/fn-headlines.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
